@@ -491,14 +491,14 @@ class SelectSearch extends React.PureComponent {
 
         if (this.props.multiple) {
             if (this.state.value.indexOf(option.value) < 0) {
-                element = <li role="menuitem" className={className} onClick={() => this.chooseOption(option.value)} key={`${option.name}-option`} data-value={option.name}>{this.props.renderOption(option, this.state, this.props)}</li>;
+                element = <li role="menuitem" className={className} onClick={() => this.chooseOption(option.value)} key={`${option.ticker}-option`} data-value={option.name}>{this.props.renderOption(option, this.state, this.props)}</li>;
             } else {
-                element = <li role="menuitem" className={className} onClick={() => this.removeOption(option.value)} key={`${option.name}-option`} data-value={option.name}>{this.props.renderOption(option, this.state, this.props)}</li>;
+                element = <li role="menuitem" className={className} onClick={() => this.removeOption(option.value)} key={`${option.ticker}-option`} data-value={option.name}>{this.props.renderOption(option, this.state, this.props)}</li>;
             }
         } else if (option.value === this.state.value) {
-            element = <li role="menuitem" className={className} key={`${option.name}-option`} data-value={option.value}>{this.props.renderOption(option)}</li>;
+            element = <li role="menuitem" className={className} key={`${option.ticker}-option`} data-value={option.value}>{this.props.renderOption(option)}</li>;
         } else {
-            element = <li role="menuitem" className={className} onClick={() => this.chooseOption(option.value)} key={`${option.name}-option`} data-value={option.name}>{this.props.renderOption(option, this.state, this.props)}</li>;
+            element = <li role="menuitem" className={className} onClick={() => this.chooseOption(option.value)} key={`${option.ticker}-option`} data-value={option.name}>{this.props.renderOption(option, this.state, this.props)}</li>;
         }
 
         return element;
@@ -578,7 +578,7 @@ class SelectSearch extends React.PureComponent {
                 this.state.value.forEach((value) => {
                     option = this.findByValue(this.state.defaultOptions, value);
                     finalValueOptions.push((
-                        <option key={option.name} value={option.value}>{option.name}</option>
+                        <option key={option.ticker} value={option.value}>{option.name}</option>
                     ));
                 });
 
