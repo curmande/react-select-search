@@ -1,6 +1,6 @@
 {
   "name": "massimo-select-search",
-  "version": "0.10.2",
+  "version": "0.10.3",
   "description": "React powered selectbox with filter",
   "main": "dist/index.js",
   "scripts": {

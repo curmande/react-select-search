@@ -558,7 +558,7 @@ function (_React$PureComponent) {
             onClick: function onClick() {
               return _this5.chooseOption(option.value);
             },
-            key: "".concat(option.value, "-option"),
+            key: "".concat(option.ticker, "-option"),
             "data-value": option.value
           }, this.props.renderOption(option, this.state, this.props));
         } else {
@@ -568,7 +568,7 @@ function (_React$PureComponent) {
             onClick: function onClick() {
               return _this5.removeOption(option.value);
             },
-            key: "".concat(option.value, "-option"),
+            key: "".concat(option.ticker, "-option"),
             "data-value": option.value
           }, this.props.renderOption(option, this.state, this.props));
         }
@@ -576,7 +576,7 @@ function (_React$PureComponent) {
         element = _react.default.createElement("li", {
           role: "menuitem",
           className: className,
-          key: "".concat(option.value, "-option"),
+          key: "".concat(option.ticker, "-option"),
           "data-value": option.value
         }, this.props.renderOption(option));
       } else {
@@ -586,7 +586,7 @@ function (_React$PureComponent) {
           onClick: function onClick() {
             return _this5.chooseOption(option.value);
           },
-          key: "".concat(option.value, "-option"),
+          key: "".concat(option.ticker, "-option"),
           "data-value": option.value
         }, this.props.renderOption(option, this.state, this.props));
       }
