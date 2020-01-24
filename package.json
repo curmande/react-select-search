@@ -1,5 +1,5 @@
 {
-  "name": "react-select-search",
+  "name": "massimo-select-search",
   "version": "0.10.1",
   "description": "React powered selectbox with filter",
   "main": "dist/index.js",
