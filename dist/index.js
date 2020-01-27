@@ -576,7 +576,7 @@ function (_React$PureComponent) {
         element = _react.default.createElement("li", {
           role: "menuitem",
           className: className,
-          key: "".concat(option.customKey, "-option"),
+          key: "".concat(option.index + Date.now().toString(36) + Math.random().toString(36).substr(2) + option.customKey, "-option"),
           "data-value": option.value
         }, this.props.renderOption(option));
       } else {
