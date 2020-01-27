@@ -5,7 +5,7 @@ import onClickOutside from 'react-onclickoutside';
 import Bem from './Bem';
 import FlattenOptions from './FlattenOptions';
 import GroupOptions from './GroupOptions';
-import * as Guid from 'guid';
+import Guid from 'guid';
 
 class SelectSearch extends React.PureComponent {
     static defaultProps = {
